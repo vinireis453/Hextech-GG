@@ -1,0 +1,62 @@
+name: Feedback
+description: Conta o que aconteceu, o que travou ou o que faltou no HEXTECH GG
+title: "[Feedback] "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Valeu por testar o HEXTECH GG. Escreve do seu jeito, sem se preocupar com formato.
+        Quanto mais detalhe, mais rápido eu consigo arrumar.
+
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: O que é isso?
+      options:
+        - Alguma coisa quebrou
+        - Uma recomendação estava errada
+        - Faltou uma função que eu queria
+        - Só quero elogiar / dar uma ideia
+    validations:
+      required: true
+
+  - type: textarea
+    id: aconteceu
+    attributes:
+      label: O que aconteceu
+      description: Descreve o que você fez e o que o app mostrou.
+      placeholder: "Ex: escolhi o Darius no topo, abri a aba Relatório e a build ficou carregando sem parar."
+    validations:
+      required: true
+
+  - type: textarea
+    id: esperava
+    attributes:
+      label: O que você esperava que acontecesse
+      placeholder: "Ex: era pra aparecer a ordem de build do Darius."
+
+  - type: input
+    id: versao
+    attributes:
+      label: Versão do app
+      description: Aparece no rodapé da lateral esquerda, em letra pequena.
+      placeholder: "2.3.7"
+    validations:
+      required: true
+
+  - type: input
+    id: campeao
+    attributes:
+      label: Campeão e rota
+      description: Só se o problema for sobre uma recomendação.
+      placeholder: "Darius, topo"
+
+  - type: dropdown
+    id: windows
+    attributes:
+      label: Windows
+      options:
+        - Windows 11
+        - Windows 10
+        - Outro
