@@ -465,5 +465,51 @@
       })
   })()
 </script>
-</body>
+
+    <style>
+      .fb { max-width: 940px; margin: 0 auto; padding: 56px 20px 20px; }
+      .fb h2 { font-size: 26px; margin: 0 0 10px; }
+      .fb-lead { color: #b9b2cc; font-size: 14.5px; line-height: 1.6; margin: 0 0 26px; max-width: 620px; }
+      .fb-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+      .fb-card { display: block; padding: 20px; border-radius: 16px; text-decoration: none;
+        border: 1px solid rgba(167,139,250,.18); background: rgba(255,255,255,.03); transition: .18s; }
+      .fb-card:hover { border-color: rgba(167,139,250,.5); background: rgba(167,139,250,.07); transform: translateY(-2px); }
+      .fb-ico { font-size: 22px; }
+      .fb-card h3 { margin: 10px 0 6px; font-size: 15.5px; color: #f1ecff; }
+      .fb-card p { margin: 0 0 12px; font-size: 13px; line-height: 1.55; color: #b9b2cc; }
+      .fb-go { font-size: 12.5px; color: #c4b5fd; font-weight: 600; }
+      .fb-note { margin: 22px 0 0; font-size: 12px; color: #8b83a3; }
+    </style>
+<!-- feedback-block -->
+    <section class="fb" id="feedback">
+      <h2>Deu problema? Tem uma ideia?</h2>
+      <p class="fb-lead">O app é feito por uma pessoa só, e é o retorno de quem usa que diz o que arrumar primeiro. Conta o que aconteceu — leva dois minutos.</p>
+
+      <div class="fb-grid">
+        <a class="fb-card" href="https://github.com/vinireis453/Hextech-GG/issues/new?template=feedback.yml">
+          <span class="fb-ico">🐞</span>
+          <h3>Alguma coisa quebrou</h3>
+          <p>Travou, não abriu, mostrou uma recomendação estranha. Descreve o que você fez e o que apareceu.</p>
+          <span class="fb-go">Abrir relato →</span>
+        </a>
+
+        <a class="fb-card" href="https://github.com/vinireis453/Hextech-GG/issues/new?template=feedback.yml">
+          <span class="fb-ico">💡</span>
+          <h3>Faltou uma função</h3>
+          <p>Uma ideia, uma tela que você queria, algo que te faria usar mais. Manda que eu leio tudo.</p>
+          <span class="fb-go">Sugerir →</span>
+        </a>
+
+        <a class="fb-card" href="https://github.com/vinireis453/Hextech-GG/issues?q=is%3Aissue">
+          <span class="fb-ico">📋</span>
+          <h3>Ver o que já foi relatado</h3>
+          <p>Antes de mandar, dá uma olhada: pode ser que alguém já tenha contado o mesmo problema.</p>
+          <span class="fb-go">Ver lista →</span>
+        </a>
+      </div>
+
+      <p class="fb-note">O relato fica público no GitHub. Se preferir falar em particular, me chama direto.</p>
+    </section>
+
+  </body>
 </html>
